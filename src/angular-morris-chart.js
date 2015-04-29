@@ -1,4 +1,4 @@
-/**
+﻿/**
  * angular morris chart provides morris.js wrappers directives for angular
  * based in ngmorris from Connor James Leech
  * 
@@ -48,7 +48,7 @@
                                 element: elem,
                                 data: scope.donutData
                             };
-                            if (scope.donutColors !== void 0 || scope.donutColors !== '') {
+                            if (scope.donutColors !== void 0 || scope.donutColors !== undefined) {
                                 options.colors = JSON.parse(scope.donutColors);
                             }
                             scope.donutInstance = new Morris.Donut(options);
